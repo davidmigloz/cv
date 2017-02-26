@@ -1,0 +1,306 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{David}{Miguel}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.18]{img/profile.png}
+  \section{Dirección}
+    Avda. Casa la Vega 
+    43 - 5ºC, 09007 
+    Burgos, España.
+    ~
+  \section{Contacto}
+    +34 628 16 33 57
+    \href{mailto:me@davidmiguel.com}{me@davidmiguel.com}
+    ~
+  \section{Web}
+    \faGlobe\ \href{http://davidmiguel.com}{davidmiguel.com}
+    \faLinkedin\ \href{https://www.linkedin.com/in/davidmigloz}{/davidmigloz}
+    \faFacebook\ \ \href{https://www.facebook.com/DavidMigLoz}{/davidmigloz}
+    \faTwitter\ \href{https://twitter.com/DavidMigLoz}{/davidmigloz}
+    \faGithub\ \href{https://github.com/davidmigloz/}{/davidmigloz}
+    \faStackOverflow\ \href{http://stackoverflow.com/users/6305235/david-miguel}{/david-miguel}
+    ~
+  \section{Idiomas}
+    \textbf{- Español (nativo)}
+    \textbf{- Inglés (avanzado)}
+    ~       
+  \section{Habilidades}
+    \textbf{- Organización}
+    \textbf{- Esfuerzo}
+    \textbf{- Responsabilidad}
+    \textbf{- Curiosidad}
+    \textbf{- Iniciativa}
+    ~ 
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Programación}
+    \smartdiagram[bubble diagram]{
+        \textbf{Java},
+        \textbf{JS\vspace{2mm}},
+        \textbf{Matlab},
+        \textbf{PHP},
+        \textbf{HTML}\\\textbf{CSS},
+        \textbf{SQL},
+        \textbf{Python},
+        \textbf{Clojure},
+        \textbf{C}
+    }
+    ~    
+\end{aside}
+~
+\\ [0.8cm]
+\section{Experiencia}
+\begin{entrylist}
+    \entry
+    {09/13 - act}
+    {Vocal de Sistemas de Información}
+    {Asoc. Burgalesa de Ingenieros Informáticos}
+    {Encargado del desarrollo y mantenimiento de la página web de la institución, de la gestión de los perfiles sociales y del diseño de nuevas campañas; fomentar las relaciones entre compañeros universitarios, instituciones académicas y el mundo de la empresa; y potenciar la formación complementaria, impartiendo cursos y seminarios.\\}
+  \entry
+    {01/11 - act}
+    {Diseñador y desarrollador web freelance}
+    {davidmiguel.com}
+    {Desarrollo \textit{front-end} y \textit{back-end} en diferentes proyectos. Mediante tecnologías como HTML5, CSS3, JavaScript, PHP, MySQL, frameworks (jQuery, Bootstrap, etc.) y gestores de contenidos (Wordpress, Joomla y Drupal).
+    \\ [2mm]
+    Proyectos principales:
+    \begin{itemize}[noitemsep]
+        \item bikersburgos.com (2011-2013)
+        \item \href{http://www.dburgalesatm.es/}{dburgalesatm.es} (2012-act)
+        \item \href{http://davidmiguel.com/}{davidmiguel.com} (2012-act)
+        \item \href{http://www.abejaburgalesa.com/}{abejaburgalesa.com} (2013-act)
+        \item \href{http://abi2burgos.es/}{abi2burgos.es} (2014-2016)
+        \item 1chocolate1sonrisa.es (2014)
+        \item \href{http://autoescuelanova.es/}{autoescuelanova.es} (2014-act)\\
+    \end{itemize}    
+    }
+    \entry
+    {08/16 - 09/16}
+    {Apicultor}
+    {Apícola Julián Muñoz}
+    {Durante un mes estuve realizando tareas de recolección y extracción de miel, vacunación y transporte de colmenas en esta empresa salmantina de apicultura profesional.\\}
+\end{entrylist}
+\\
+\section{Educación}
+\begin{entrylist}
+  \entry
+    {2012 - act}
+    {Grado en Ingeniería Informática}
+    {Universidad de Burgos}
+    {- Nota media: 8,8 / 10.\\
+    - Matrículas de honor: Fundamentos Deontológicos y Jurídicos de las TIC, Informática Básica, Estadística, Interacción Hombre-Máquina y Métodos numéricos y optimización.\\}
+  \entry
+    {2015 - 2016}
+    {Degree in Computer Science - Erasmus+}
+    {Politechnika Warszawska}
+    {- Nota media: 4,6 / 5.\\}
+  \entry
+    {2009 - 2015}
+    {Inglés}
+    {Escuela Oficial de Idiomas}
+    {- Nivel: avanzado.\\}
+\end{entrylist}
+
+\newpage
+
+\begin{aside}
+~
+~
+~
+  \section{\vspace{0.49cm}Competencias}
+    \textbf{- Android}
+    \textbf{- Arduino}
+    \textbf{- C}
+    \textbf{- Clojure}
+    \textbf{- CSS3}
+    \textbf{- CUDA}
+    \textbf{- Fotografía}
+    \textbf{- Git}
+    \textbf{- Gradle}
+    \textbf{- HTML5}
+    \textbf{- Jade}
+    \textbf{- Java}
+    \textbf{- JavaFX}
+    \textbf{- JavaScript}
+    \textbf{- jQuery}
+    \textbf{- \LaTeX}
+    \textbf{- Lightroom}
+    \textbf{- Linux}
+    \textbf{- Markdown}
+    \textbf{- Matlab}
+    \textbf{- Maven}
+    \textbf{- MPI}
+    \textbf{- MySQL}
+    \textbf{- Office}
+    \textbf{- OpenCV}
+    \textbf{- ORM}
+    \textbf{- Photoshop}
+    \textbf{- PHP}
+    \textbf{- Python}
+    \textbf{- Realm}
+    \textbf{- SQL}
+    \textbf{- Testing}
+    \textbf{- Windows}
+    \textbf{- WordPress}
+    \textbf{- XML}
+    ~
+  \section{Aficiones}
+    \textbf{- Viajar}
+    \textbf{- Fotografía}
+    \textbf{- Guitarra}
+    \textbf{- Natación}
+    \textbf{- Montañismo}
+    \textbf{- Mountain bike}    
+    \textbf{- Apicultura}
+    \textbf{- Eventos tecnológicos}
+    ~
+\end{aside}
+
+\section{Certificaciones}
+\begin{entrylist}
+  \entry
+    {02/2016}
+    {ISTQB Foundation Level}
+    {Stowarzyszenie Jakosci Systemow Informatycznych}
+    {\emph{International Software Testing Qualifications Board. Licencia 5325/2016.}}
+\end{entrylist}
+
+\section{Cursos}
+\begin{entrylist}
+  \entry
+    {2016}
+    {Android Development for Beginners}
+    {Google}
+    {\emph{Curso introductorio al desarrollo de aplicaciones Android.}}
+  \entry
+    {2016}
+    {Primeros Auxilios Psicológicos}
+    {Universitat Autònoma de Barcelona}
+    {\emph{Aplicación de primeros auxilios psicológicos (PAP) a personas afectadas por situaciones altamente estresantes.}}
+  \entry
+    {2016}
+    {Learning How to Learn: Powerful mental tools to help you master tough subjects}
+    {Universidad de California en San Diego}
+    {\emph{Técnicas de aprendizaje, neurociencia y procrastinación.}}
+  \entry
+    {2015}
+    {Fotografía de bodas}
+    {Carlos Vaquero}
+    {\emph{Curso introductorio a la fotografía de bodas.}}
+  \entry
+    {2015}
+    {Desarrollo de aplicaciones móviles con Android}
+    {agilecyl}
+    {\emph{Curso introductorio al desarrollo de aplicaciones Android.}}
+  \entry
+    {2014}
+    {Primeros Auxilios}
+    {Cruz Roja}
+    {\emph{Técnicas esenciales de Primeros Auxilios.}}
+  \entry
+    {2014}
+    {Marketing Digital}
+    {Google Actívate} 
+    {\emph{Fundamentos de tecnología, SEO, SEM, analítica web, comercio electrónico, RRSS, dispositivos móviles, emprendimiento, etc.}}
+  \entry
+    {2014}
+    {Desarrollo web ágil con Python y Django}
+    {CEEI Burgos} 
+    {\emph{Curso introductorio al desarrollo web ágil con Python y Django.}}    
+  \entry
+    {2013}
+    {Diseño, maquetación y programación web}
+    {Asoc. Burgalesa de Ing. Informáticos}   
+    {\emph{Cómo desarrollar una página web desde cero.}}     
+  \entry
+    {2012}
+    {Introducción al desarrollo web}
+    {Universidad de Alicante}  
+    {\emph{Curso introductorio al desarrollo web: HTML, CSS y JavaScript.}}     
+  \entry
+    {2011}
+    {Un año de fotografía}
+    {José Benito Ruiz}    
+    {\emph{Curso avanzado de fotografía digital de un año de duración.}}      
+\end{entrylist}
+
+\section{Reconocimientos}
+\begin{entrylist}
+  \entry
+    {12/2016}
+    {Beca de colaboración de estudiantes con departamentos universitarios\\}
+    {Ministerio de Educación, Cultura y Deporte}
+    {\emph{Ganador de una de las 15 becas de colaboración asignadas a la Universidad de Burgos para la toma de contacto con tareas de investigación. Departamento: Ingeniería Civil.}}
+\end{entrylist}
+
+\section{Voluntariados}
+\begin{entrylist}
+  \entry
+    {09/2014}
+    {Workcamp Mikulov (Rep. Checa)}
+    {INEX-SDA}
+    {\emph{Se realizaron diversos trabajos medioambientales (limpieza de montes, jardines y cementerio judío, matenimiento del jardín botánico de Lednice, etc.).}}
+  \entry
+    {09/2013}
+    {Workcamp Clausthal-Zellerfeld (Alemania)}
+    {IJGD}
+    {\emph{Se realizaron diversos trabajos forestales (limpieza de bosques, acondicionamiento de caminos, tala de árboles, etc.).}}
+\end{entrylist}
+\end{document}
