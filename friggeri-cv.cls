@@ -114,7 +114,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=6cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{30pt}{62pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\hspace{4.2cm} \bodyfont #1\ }{\thinfont #2}
     };
     % \node [anchor=north] at (name.south) {%
     %   \fontsize{14pt}{24pt}\color{pblue}%

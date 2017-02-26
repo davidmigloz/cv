@@ -1,5 +1,6 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
+\usepackage[spanish]{babel}
 \usepackage{afterpage}
 \usepackage{hyperref}
 \usepackage{color}
@@ -52,7 +53,7 @@
 \definecolor{pblue}{HTML}{0395DE}
 
 \begin{document}
-\header{David}{Miguel}
+\header{David}{Miguel Lozano}
       
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -92,17 +93,8 @@
     ~ 
   % use  \hspace{} or \vspace{} to change bubble size, if needed
   \section{Programación}
-    \smartdiagram[bubble diagram]{
-        \textbf{Java},
-        \textbf{JS\vspace{2mm}},
-        \textbf{Matlab},
-        \textbf{PHP},
-        \textbf{HTML}\\\textbf{CSS},
-        \textbf{SQL},
-        \textbf{Python},
-        \textbf{Clojure},
-        \textbf{C}
-    }
+  \\ [0.5cm]
+    \includegraphics[scale=0.9]{img/cloud.png}
     ~    
 \end{aside}
 ~
@@ -110,26 +102,15 @@
 \section{Experiencia}
 \begin{entrylist}
     \entry
-    {09/13 - act}
+    {09/13 - act.}
     {Vocal de Sistemas de Información}
-    {Asoc. Burgalesa de Ingenieros Informáticos}
-    {Encargado del desarrollo y mantenimiento de la página web de la institución, de la gestión de los perfiles sociales y del diseño de nuevas campañas; fomentar las relaciones entre compañeros universitarios, instituciones académicas y el mundo de la empresa; y potenciar la formación complementaria, impartiendo cursos y seminarios.\\}
-  \entry
-    {01/11 - act}
+    {\href{http://abi2burgos.es/}{Asoc. Burgalesa de Ingenieros Informáticos}}
+    {Encargado del desarrollo y mantenimiento de la página web de la institución, de la gestión de los perfiles sociales y de la organización de eventos (OpenWeek, Google HashCode, etc.).\\}
+    \entry
+    {01/11 - act.}
     {Diseñador y desarrollador web freelance}
-    {davidmiguel.com}
-    {Desarrollo \textit{front-end} y \textit{back-end} en diferentes proyectos. Mediante tecnologías como HTML5, CSS3, JavaScript, PHP, MySQL, frameworks (jQuery, Bootstrap, etc.) y gestores de contenidos (Wordpress, Joomla y Drupal).
-    \\ [2mm]
-    Proyectos principales:
-    \begin{itemize}[noitemsep]
-        \item bikersburgos.com (2011-2013)
-        \item \href{http://www.dburgalesatm.es/}{dburgalesatm.es} (2012-act)
-        \item \href{http://davidmiguel.com/}{davidmiguel.com} (2012-act)
-        \item \href{http://www.abejaburgalesa.com/}{abejaburgalesa.com} (2013-act)
-        \item \href{http://abi2burgos.es/}{abi2burgos.es} (2014-2016)
-        \item 1chocolate1sonrisa.es (2014)
-        \item \href{http://autoescuelanova.es/}{autoescuelanova.es} (2014-act)\\
-    \end{itemize}    
+    {\href{http://davidmiguel.com/}{davidmiguel.com}}
+    {Desarrollo \textit{front-end} y \textit{back-end} en diferentes proyectos. Mediante tecnologías como HTML5, CSS3, JavaScript, PHP, MySQL, \textit{frameworks} (jQuery, Bootstrap, etc.) y gestores de contenidos (Wordpress, Joomla y Drupal).
     }
     \entry
     {08/16 - 09/16}
@@ -137,25 +118,42 @@
     {Apícola Julián Muñoz}
     {Durante un mes estuve realizando tareas de recolección y extracción de miel, vacunación y transporte de colmenas en esta empresa salmantina de apicultura profesional.\\}
 \end{entrylist}
-\\
+
+\section{Proyectos}
+\begin{entrylist}
+  \entry
+    {09/16 - act.}
+    {GoBees - Gestión inteligente de colmenares}
+    {\href{http://gobees.io/}{gobees.io}}
+    {Plataforma para la gestión y monitorización de colmenares. Actualmente está disponible para dispositivos Android. Su característica estrella es la monitorización de la actividad de vuelo de una colmena mediante la cámara de un \emph{smartpone}. Fue desarrollado como Trabajo Fin de Grado, obteniendo una calificación de 10.}
+\end{entrylist}
+
 \section{Educación}
 \begin{entrylist}
   \entry
-    {2012 - act}
+    {09/12 - 02/17}
     {Grado en Ingeniería Informática}
-    {Universidad de Burgos}
-    {- Nota media: 8,8 / 10.\\
-    - Matrículas de honor: Fundamentos Deontológicos y Jurídicos de las TIC, Informática Básica, Estadística, Interacción Hombre-Máquina y Métodos numéricos y optimización.\\}
+    {\href{http://wwww.ubu.es/}{Universidad de Burgos}}
+    {Nota media: 8,8 / 10 (nota más alta de la promoción).\\}
   \entry
-    {2015 - 2016}
+    {09/15 - 06/16}
     {Degree in Computer Science - Erasmus+}
-    {Politechnika Warszawska}
-    {- Nota media: 4,6 / 5.\\}
+    {\href{https://www.pw.edu.pl/}{Politechnika Warszawska}}
+    {Nota media: 4,6 / 5.\\}
   \entry
-    {2009 - 2015}
+    {09/09 - 06/15}
     {Inglés}
-    {Escuela Oficial de Idiomas}
-    {- Nivel: avanzado.\\}
+    {\href{http://eoiburgos.centros.educa.jcyl.es/}{Escuela Oficial de Idiomas de Burgos}}
+    {Nivel: avanzado.\\}
+\end{entrylist}
+
+\section{Certificaciones}
+\begin{entrylist}
+  \entry
+    {02/2016}
+    {ISTQB Foundation Level}
+    {\href{http://sjsi.org/}{Stowarzyszenie Jakosci Systemow Informatycznych}}
+    {\emph{International Software Testing Qualifications Board. Licencia 5325/2016.}}
 \end{entrylist}
 
 \newpage
@@ -168,11 +166,13 @@
     \textbf{- Android}
     \textbf{- Arduino}
     \textbf{- C}
+    \textbf{- CI}    
     \textbf{- Clojure}
     \textbf{- CSS3}
     \textbf{- CUDA}
     \textbf{- Fotografía}
     \textbf{- Git}
+    \textbf{- GitFlow}    
     \textbf{- Gradle}
     \textbf{- HTML5}
     \textbf{- Jade}
@@ -196,6 +196,7 @@
     \textbf{- Python}
     \textbf{- Realm}
     \textbf{- SQL}
+    \textbf{- SQLite}    
     \textbf{- Testing}
     \textbf{- Windows}
     \textbf{- WordPress}
@@ -213,81 +214,82 @@
     ~
 \end{aside}
 
-\section{Certificaciones}
-\begin{entrylist}
-  \entry
-    {02/2016}
-    {ISTQB Foundation Level}
-    {Stowarzyszenie Jakosci Systemow Informatycznych}
-    {\emph{International Software Testing Qualifications Board. Licencia 5325/2016.}}
-\end{entrylist}
-
 \section{Cursos}
 \begin{entrylist}
   \entry
     {2016}
     {Android Development for Beginners}
-    {Google}
-    {\emph{Curso introductorio al desarrollo de aplicaciones Android.}}
+    {\href{https://www.udacity.com/course/android-development-for-beginners--ud837}{Google}}
+    {Curso introductorio al desarrollo de aplicaciones Android.}
   \entry
     {2016}
     {Primeros Auxilios Psicológicos}
-    {Universitat Autònoma de Barcelona}
-    {\emph{Aplicación de primeros auxilios psicológicos (PAP) a personas afectadas por situaciones altamente estresantes.}}
+    {\href{https://www.coursera.org/learn/pap}{Universitat Autònoma de Barcelona}}
+    {Aplicación de primeros auxilios psicológicos (PAP) a personas afectadas por situaciones altamente estresantes.}
   \entry
     {2016}
     {Learning How to Learn: Powerful mental tools to help you master tough subjects}
-    {Universidad de California en San Diego}
-    {\emph{Técnicas de aprendizaje, neurociencia y procrastinación.}}
+    {\href{https://coursera.org/learn/learning-how-to-learn/}{Universidad de California en San Diego}}
+    {Técnicas de aprendizaje, neurociencia y procrastinación.}
   \entry
     {2015}
     {Fotografía de bodas}
-    {Carlos Vaquero}
-    {\emph{Curso introductorio a la fotografía de bodas.}}
+    {\href{http://www.carlosvaquero.es/}{Carlos Vaquero}}
+    {Curso introductorio a la fotografía de bodas.}
   \entry
     {2015}
     {Desarrollo de aplicaciones móviles con Android}
-    {agilecyl}
-    {\emph{Curso introductorio al desarrollo de aplicaciones Android.}}
+    {\href{http://agilecyl.org/}{agilecyl}}
+    {Curso introductorio al desarrollo de aplicaciones Android.}
   \entry
     {2014}
     {Primeros Auxilios}
-    {Cruz Roja}
-    {\emph{Técnicas esenciales de Primeros Auxilios.}}
+    {\href{http://www.cruzroja.es/}{Cruz Roja}}
+    {Técnicas básicas de Primeros Auxilios.}
   \entry
     {2014}
     {Marketing Digital}
-    {Google Actívate} 
-    {\emph{Fundamentos de tecnología, SEO, SEM, analítica web, comercio electrónico, RRSS, dispositivos móviles, emprendimiento, etc.}}
+    {\href{https://www.google.es/landing/activate/}{Google Actívate}} 
+    {Fundamentos de tecnología, SEO, SEM, analítica web, comercio electrónico, RRSS, dispositivos móviles, emprendimiento, etc.}
   \entry
     {2014}
     {Desarrollo web ágil con Python y Django}
-    {CEEI Burgos} 
-    {\emph{Curso introductorio al desarrollo web ágil con Python y Django.}}    
+    {\href{http://www.ceeiburgos.es/}{CEEI Burgos}} 
+    {Curso introductorio al desarrollo web ágil con Python y Django.}    
   \entry
     {2013}
     {Diseño, maquetación y programación web}
-    {Asoc. Burgalesa de Ing. Informáticos}   
-    {\emph{Cómo desarrollar una página web desde cero.}}     
+    {\href{http://abi2burgos.es/}{Asoc. Burgalesa de Ing. Informáticos}}   
+    {Cómo desarrollar una página web desde cero.}     
   \entry
     {2012}
     {Introducción al desarrollo web}
-    {Universidad de Alicante}  
-    {\emph{Curso introductorio al desarrollo web: HTML, CSS y JavaScript.}}     
+    {\href{https://www.ua.es/}{Universidad de Alicante}}  
+    {Curso introductorio al desarrollo web: HTML, CSS y JavaScript.}     
   \entry
     {2011}
     {Un año de fotografía}
-    {José Benito Ruiz}    
-    {\emph{Curso avanzado de fotografía digital de un año de duración.}}      
+    {\href{http://josebruiz.com/}{José Benito Ruiz}}    
+    {Curso avanzado de fotografía digital de un año de duración.}      
 \end{entrylist}
 
 \section{Reconocimientos}
 \begin{entrylist}
   \entry
+    {01/2017}
+    {YUZZ "Jóvenes con ideas"}
+    {\href{http://yuzz.org.es/}{Santander Universidades}}
+    {Seleccionado para el programa Yuzz con el proyecto GoBees. Yuzz brinda asesoramiento, espacios de coworking y formación a jóvenes emprendedores que quieran desarrollar una idea innovadora.}
+  \entry
+    {12/2016}
+    {Premio Prototipos Orientados al Mercado}
+    {\href{http://wwww.ubu.es/te-interesa/convocatoria-prototipos-orientados-al-mercado-curso-2016-2017}{Universidad de Burgos - OTRI}}
+    {GoBees obtuvo uno de los tres premios para la obtención de prototipos con posibilidades de ser comercializados en el mercado.}
+  \entry
     {12/2016}
     {Beca de colaboración de estudiantes con departamentos universitarios\\}
-    {Ministerio de Educación, Cultura y Deporte}
-    {\emph{Ganador de una de las 15 becas de colaboración asignadas a la Universidad de Burgos para la toma de contacto con tareas de investigación. Departamento: Ingeniería Civil.}}
+    {\href{http://www.mecd.gob.es/}{Ministerio de Educación, Cultura y Deporte}}
+    {Ganador de una de las 15 becas de colaboración asignadas a la Universidad de Burgos para la toma de contacto con tareas de investigación. Departamento: Ingeniería Civil.}  
 \end{entrylist}
 
 \section{Voluntariados}
@@ -295,12 +297,12 @@
   \entry
     {09/2014}
     {Workcamp Mikulov (Rep. Checa)}
-    {INEX-SDA}
-    {\emph{Se realizaron diversos trabajos medioambientales (limpieza de montes, jardines y cementerio judío, matenimiento del jardín botánico de Lednice, etc.).}}
+    {\href{https://www.inexsda.cz/}{INEX-SDA}}
+    {Se realizaron diversos trabajos medioambientales.}
   \entry
     {09/2013}
     {Workcamp Clausthal-Zellerfeld (Alemania)}
-    {IJGD}
-    {\emph{Se realizaron diversos trabajos forestales (limpieza de bosques, acondicionamiento de caminos, tala de árboles, etc.).}}
+    {\href{http://www.ijgd.de/}{IJGD}}
+    {Se realizaron diversos trabajos forestales.}
 \end{entrylist}
 \end{document}
