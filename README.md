@@ -2,8 +2,8 @@
 
 ### English version
 
-> [CV_David_Miguel_en.pdf](https://raw.githubusercontent.com/davidmigloz/cv/blob/en/CV_David_Miguel_en.pdf)
+> [CV_David_Miguel_en.pdf](https://raw.githubusercontent.com/davidmigloz/cv/en/CV_David_Miguel_en.pdf)
 
 ### Spanish version
 
-> [CV_David_Miguel_es.pdf](https://raw.githubusercontent.com/davidmigloz/cv/blob/es/CV_David_Miguel_es.pdf)
+> [CV_David_Miguel_es.pdf](https://raw.githubusercontent.com/davidmigloz/cv/es/CV_David_Miguel_es.pdf)
