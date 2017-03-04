@@ -1,23 +1,18 @@
 %!TEX TS-program = xelatex
+% Compile with LuaLaTeX
 \documentclass[]{friggeri-cv}
+\usepackage[utf8]{inputenc}
 \usepackage{afterpage}
-\usepackage{hyperref}
 \usepackage{color}
 \usepackage{xcolor}
-\usepackage{smartdiagram}
 \usepackage{fontspec}
-% if you want to add fontawesome package
-% you need to compile the tex file with LuaLaTeX
-% References:
-%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
-%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
 \usepackage{fontawesome}
 \usepackage{metalogo}
 \usepackage{dtklogos}
 \usepackage{enumitem}
-\usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,shadows}
+\usepackage{hyperref}
 \hypersetup{
     pdftitle={},
     pdfauthor={},
@@ -26,28 +21,6 @@
     colorlinks=false,           % no lik border color
     allbordercolors=white       % white border color for all
 }
-\smartdiagramset{
-    bubble center node font = \footnotesize,
-    bubble node font = \footnotesize,
-    % specifies the minimum size of the bubble center node
-    bubble center node size = 0.5cm,
-    %  specifies the minimum size of the bubbles
-    bubble node size = 0.5cm,
-    % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
-    % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.5cm,
-    % set center bubble color
-    bubble center node color = pblue,
-    % define the list of colors usable in the diagram
-    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
-    % sets the opacity at which the bubbles are shown
-    bubble fill opacity = 0.6,
-    % sets the opacity at which the bubble text is shown
-    bubble text opacity = 0.5,
-}
-
-\addbibresource{bibliography.bib}
 \RequirePackage{xcolor}
 \definecolor{pblue}{HTML}{0395DE}
 
@@ -63,23 +36,19 @@
 \begin{aside}
   \includegraphics[scale=0.18]{img/profile.png}
   \section{Personal}
-    \\[0.3cm] 
     Spanish
     08/11/1994 (22)
     ~  
   \section{Contact}
-    \\[0.3cm]  
     +34 628 16 33 57
     \href{mailto:me@davidmiguel.com}{me@davidmiguel.com}
     ~  
   \section{Address}
-    \\[0.3cm]  
     De la Reijstraat 26,
     1091 PB, Amsterdam
     (Netherlands).
     ~    
   \section{Web}
-    \\[0.3cm]
     \faGlobe\ \href{http://davidmiguel.com}{davidmiguel.com}
     \faLinkedin\ \href{https://www.linkedin.com/in/davidmigloz}{/davidmigloz}
     \faGithub\ \href{https://github.com/davidmigloz/}{/davidmigloz}
@@ -88,12 +57,10 @@
     \faTwitter\ \href{https://twitter.com/DavidMigLoz}{/davidmigloz}
     ~
   \section{Languages}
-    \\[0.3cm]
     - Spanish (native)
     - English (advanced)
     ~       
   \section{Programming}
-    \\[0.3cm]
     \includegraphics[scale=0.9]{img/cloud.png}
     ~    
 \end{aside}
@@ -102,30 +69,37 @@
 \section{Experience}
 \begin{entrylist}
     \entry
-    {09/13 - now}
-    {Information systems vocal}
-    {\href{http://abi2burgos.es/}{Computer Engineers Association of Burgos}}
-    {Responsible for developing and maintaining the institution's website, managing social profiles and organizing events (OpenWeek, Google HashCode, Information Technologies Week, etc.).\\}
-    \entry
-    {01/11 - now}
+    {01/11 - pres.}
     {Freelance web designer and developer}
     {\href{http://davidmiguel.com/}{davidmiguel.com}}
-    {Front-end and back-end development in different projects. Using technologies like HTML5, CSS3, JavaScript, PHP, MySQL, frameworks (jQuery, Bootstrap, etc.) and content management systems (Wordpress, Joomla y Drupal).
+    {Front-end and back-end development in different projects. Using technologies like HTML5, CSS3, JavaScript, PHP, MySQL, frameworks (jQuery, Bootstrap, etc.) and content management systems (Wordpress and Drupal).
+    \\ [2mm]
+    Main projects:
+    \begin{itemize}[noitemsep]
+        \item \itab{\href{http://autoescuelanova.es/}{autoescuelanova.es}} \tab{(2014-pres.)}
+        \item \itab{\href{http://abi2burgos.es/}{abi2burgos.es}} \tab{(2014-pres.)}        
+        \item \itab{\href{http://www.abejaburgalesa.com/}{abejaburgalesa.com}} \tab{(2013-pres.)}\\
+    \end{itemize}    
     }
     \entry
-    {08/16 - 09/16}
-    {Beekeeper}
-    {Julián Muñoz Beekeeping}
-    {Honey collection and extraction, apiaries vaccination and hives transportation in a professional beekeeping company.\\}
+    {09/13 - pres.}
+    {Information systems vocal}
+    {\href{http://abi2burgos.es/}{Computer Engineers Association of Burgos}}
+    {Responsible for developing and maintaining the institution's website, managing social profiles and organizing events (OpenWeek, Google HashCode, Information Technologies Week, etc.) and courses.\\}
 \end{entrylist}
 
 \section{Projects}
 \begin{entrylist}
   \entry
-    {09/16 - now}
+    {09/16 - pres.}
     {GoBees - Smart apiary management}
     {\href{http://gobees.io/}{gobees.io}}
-    {Platform for the management and monitoring of apiaries. At present, it is available for Android devices. Its main feature is the ability to monitor the flight activity of a honey bee colony using the built-in camera of a smartphone. It was developed as my bachelor's dissertation, obtaining a grade of 10 / 10.}
+    {Android app for the management and monitoring of apiaries.
+    It was developed as my bachelor's dissertation, obtaining a grade of 10 / 10.
+    \\ [2mm]
+    • \textbf{Methodologies}: Scrum, TDD, GitFlow, MVP and Material Design.\\
+    • \textbf{Technologies}: Android, Gradle, OpenCV, Realm, JUnit,  Espresso, etc.\\
+    • \textbf{Tools}: Android Studio, Git, GitHub, ZenHub, Slack, ReadTheDocs,\\       TravisCI, Codecov, CodeClimate, SonarQube, VersionEye, etc.\\}
 \end{entrylist}
 
 \section{Education}
@@ -163,56 +137,56 @@
 ~
 ~
   \section{\vspace{0.49cm}Expertise}
-    \\[0.3cm]
-    \textbf{- Android}
-    \textbf{- Arduino}
-    \textbf{- C}
-    \textbf{- CI}    
-    \textbf{- Clojure}
-    \textbf{- CSS3}
-    \textbf{- CUDA}
-    \textbf{- Photography}
-    \textbf{- Git}
-    \textbf{- GitFlow}    
-    \textbf{- Gradle}
-    \textbf{- HTML5}
-    \textbf{- Jade}
-    \textbf{- Java}
-    \textbf{- JavaFX}
-    \textbf{- JavaScript}
-    \textbf{- jQuery}
-    \textbf{- \LaTeX}
-    \textbf{- Lightroom}
-    \textbf{- Linux}
-    \textbf{- Markdown}
-    \textbf{- Matlab}
-    \textbf{- Maven}
-    \textbf{- MPI}
-    \textbf{- MySQL}
-    \textbf{- Office}
-    \textbf{- OpenCV}
-    \textbf{- ORM}
-    \textbf{- Photoshop}
-    \textbf{- PHP}
-    \textbf{- Python}
-    \textbf{- Realm}
-    \textbf{- SQL}
-    \textbf{- SQLite}    
-    \textbf{- Testing}
-    \textbf{- Windows}
-    \textbf{- WordPress}
-    \textbf{- XML}
+    - Android
+    - Arduino
+    - C
+    - CI    
+    - Clojure
+    - CSS3
+    - CUDA
+    - Photography
+    - Git
+    - GitFlow    
+    - Gradle
+    - HTML5
+    - Jade
+    - Java
+    - JavaFX
+    - JavaScript
+    - jQuery
+    - \LaTeX
+    - Lightroom
+    - Linux
+    - Markdown
+    - Matlab
+    - Maven
+    - MPI
+    - MySQL
+    - Office
+    - OpenCV
+    - ORM
+    - Photoshop
+    - PHP
+    - Python
+    - Realm
+    - Scrum
+    - SQL
+    - SQLite
+    - TDD
+    - Testing
+    - Windows
+    - WordPress
+    - XML
     ~
   \section{Interests}
-    \\[0.3cm]  
-    \textbf{- Traveling}
-    \textbf{- Photography}
-    \textbf{- Tech events}    
-    \textbf{- Swim}
-    \textbf{- Mountaineering}
-    \textbf{- Mountain bike}
-    \textbf{- Guitar}    
-    \textbf{- Beekeeping}
+    - Traveling
+    - Photography
+    - Tech events    
+    - Swim
+    - Mountaineering
+    - Mountain bike
+    - Guitar    
+    - Beekeeping
     ~
 \end{aside}
 
@@ -261,7 +235,7 @@
   \entry
     {2013}
     {Design, layout and web developing}
-    {\href{http://abi2burgos.es/}{Computer Engineers Association of Burgos}}   
+    {\href{http://abi2burgos.es/}{Computer Engineers Assoc. of Burgos}}   
     {How to develop a web page from scratch.}     
   \entry
     {2012}
