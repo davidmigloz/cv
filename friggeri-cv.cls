@@ -196,10 +196,12 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=pblue} #3}\\%
+    {\small\addfontfeature{Color=pblue} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tab}[1]{\hspace{.3\textwidth}\rlap{#1}}
 
 %%%%%%%%%%%%%%
 % Side block %
@@ -211,7 +213,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}
+    \par\vspace{\baselineskip}{\Large\headingfont\color{pblue} ##1}{\par\vspace{0.2cm}}
   }
   \begin{textblock}{3.6}(2.0, 0.55)
   \begin{flushleft}
